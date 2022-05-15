@@ -21,6 +21,9 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'onsails/lspkind.nvim'
 Plug 'terrortylor/nvim-comment'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'L3MON4D3/LuaSnip'
 -- themes
 Plug 'gruvbox-community/gruvbox'
 vim.call('plug#end')

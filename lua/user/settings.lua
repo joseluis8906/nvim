@@ -13,7 +13,7 @@ vim.opt.exrc = true
 vim.opt.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20'
 vim.opt.nu = true
 vim.opt.relativenumber = true
-vim.opt.hls = false
+vim.opt.hls = true
 vim.opt.hidden = true
 vim.opt.eb = false
 vim.opt.tabstop=4 
@@ -43,6 +43,7 @@ vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.opt.autowrite = true
 vim.opt.mouse = 'a'
+vim.opt.redrawtime = 10000
 
 -- global settings
 vim.g.mapleader = ' '

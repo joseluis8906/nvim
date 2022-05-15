@@ -31,17 +31,16 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'gopls' }
+local servers = { 'gopls', 'intelephense' }
 for _, lsp in pairs(servers) do
-    require('lspconfig')[lsp].setup {
-        on_attach = on_attach,
-        flags = {
-            -- This will be the default in neovim 0.7+
-            debounce_text_changes = 150,
-        }
+  require('lspconfig')[lsp].setup {
+    on_attach = on_attach,
+    flags = {
+      -- This will be the default in neovim 0.7+
+      debounce_text_changes = 150,
     }
+  }
 end
-
 
 function OrgImports(wait_ms)
     local params = vim.lsp.util.make_range_params()
@@ -50,7 +49,7 @@ function OrgImports(wait_ms)
     for _, res in pairs(result or {}) do
         for _, r in pairs(res.result or {}) do
             if r.edit then
-              vim.lsp.util.apply_workspace_edit(r.edit, "UTF-8")
+                vim.lsp.util.apply_workspace_edit(r.edit, "UTF-8")
             else
                 vim.lsp.buf.execute_command(r.command)
             end
