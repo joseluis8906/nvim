@@ -6,6 +6,7 @@ vim.cmd [[
     filetype on
     filetype plugin on
     au BufNewFile,BufRead Jenkinsfile setf groovy
+    set clipboard+=unnamedplus
 ]]
 
 -- options
@@ -83,3 +84,4 @@ tree.close = function ()
 end
 
 return tree
+

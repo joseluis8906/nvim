@@ -23,6 +23,7 @@ use 'terrortylor/nvim-comment'
 use 'lukas-reineke/indent-blankline.nvim'
 use 'saadparwaiz1/cmp_luasnip'
 use 'L3MON4D3/LuaSnip'
+use 'glepnir/dashboard-nvim'
 -- themes
 use 'gruvbox-community/gruvbox'
 use 'navarasu/onedark.nvim'

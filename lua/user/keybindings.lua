@@ -1,3 +1,5 @@
+local home = os.getenv('HOME')
+
 vim.keymap.set('n', '<F4>', ':call vimspector#Reset()<CR>')
 vim.keymap.set('n', '<leader>ps', ":lua require('telescope.builtin').grep_string({ search = vim.fn.input(\"Grep for > \")})<CR>")
 vim.keymap.set('n', '<leader>bd', ':BufferClose<CR>')
@@ -22,3 +24,6 @@ vim.keymap.set('n', '<leader>lx', '<cmd>lua vim.lsp.buf.references()<CR>')
 vim.keymap.set('n', '<leader>lh', '<cmd>lua vim.lsp.buf.hover()<CR>')
 vim.keymap.set('n', '<leader>lc', '<Cmd>set operatorfunc=CommentOperator<CR>g@')
 vim.keymap.set('v', '<leader>lc', ':<C-U>call CommentOperator(visualmode())<CR>')
+vim.keymap.set('n', '<leader>sl', ':SessionLoad<CR>')
+vim.keymap.set('n', '<leader>ff', ':Telescope find_files find_command=rg,--hidden,--files<CR>')
+vim.keymap.set('n', '<leader>fb', ':Telescope file_browser<CR>')
