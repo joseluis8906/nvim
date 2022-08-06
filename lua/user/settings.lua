@@ -1,7 +1,7 @@
 -- commands
 vim.cmd [[
     syntax enable
-    colorscheme gruvbox
+    colorscheme onedark
     highlight Normal guibg=none
     filetype on
     filetype plugin on
@@ -47,7 +47,9 @@ vim.opt.redrawtime = 10000
 
 -- global settings
 vim.g.mapleader = ' '
-vim.g.python3_host_prog = '/usr/local/bin/python3'
+vim.g.python3_host_prog = '/home/linuxbrew/.linuxbrew/bin/python3'
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
 vim.g.vimspector_enable_mappings = 'HUMAN'
 vim.g.ale_sign_error = '⤫'
 vim.g.ale_sign_warning = '⚠'

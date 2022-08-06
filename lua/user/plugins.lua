@@ -1,29 +1,29 @@
-local Plug = vim.fn['plug#']
-
-vim.call('plug#begin', '~/.vim/plugged')
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
-Plug('junegunn/fzf', {['do'] = function() vim.call('fzf#install') end})
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'kyazdani42/nvim-web-devicons' -- for file icons
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'puremourning/vimspector'
-Plug 'tpope/vim-fugitive'
-Plug 'dense-analysis/ale'
-Plug 'romgrk/barbar.nvim'
-Plug 'airblade/vim-gitgutter'
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'onsails/lspkind.nvim'
-Plug 'terrortylor/nvim-comment'
-Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'L3MON4D3/LuaSnip'
+return require('packer').startup(function(use)
+use 'wbthomason/packer.nvim'
+use 'nvim-lua/popup.nvim'
+use 'nvim-lua/plenary.nvim'
+use 'nvim-telescope/telescope.nvim'
+use {'nvim-treesitter/nvim-treesitter', ['do'] = 'TSUpdate'}
+use {'junegunn/fzf', ['do'] = function() vim.call('fzf#install') end}
+use 'nvim-lualine/lualine.nvim'
+use 'kyazdani42/nvim-web-devicons' -- for file icons
+use 'kyazdani42/nvim-tree.lua'
+use 'puremourning/vimspector'
+use 'tpope/vim-fugitive'
+use 'dense-analysis/ale'
+use 'romgrk/barbar.nvim'
+use 'airblade/vim-gitgutter'
+use 'neovim/nvim-lspconfig'
+use 'williamboman/nvim-lsp-installer'
+use 'hrsh7th/cmp-nvim-lsp'
+use 'hrsh7th/cmp-buffer'
+use 'hrsh7th/nvim-cmp'
+use 'onsails/lspkind.nvim'
+use 'terrortylor/nvim-comment'
+use 'lukas-reineke/indent-blankline.nvim'
+use 'saadparwaiz1/cmp_luasnip'
+use 'L3MON4D3/LuaSnip'
 -- themes
-Plug 'gruvbox-community/gruvbox'
-vim.call('plug#end')
+use 'gruvbox-community/gruvbox'
+use 'navarasu/onedark.nvim'
+end)
