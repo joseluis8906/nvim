@@ -7,6 +7,10 @@ vim.cmd [[
     filetype plugin on
     au BufNewFile,BufRead Jenkinsfile setf groovy
     set clipboard+=unnamedplus
+    autocmd FileType go nnoremap <buffer> <leader>lr :GoRun<CR>
+    autocmd FileType go nnoremap <buffer> <leader>lt :GoTestFunc<CR>
+    autocmd FileType rust nnoremap <buffer> <leader>lr :RustPlay<CR>
+    autocmd FileType rust nnoremap <buffer> <leader>lt :RustTest<CR>
 ]]
 
 -- options
@@ -49,6 +53,7 @@ vim.opt.redrawtime = 10000
 -- global settings
 vim.g.mapleader = ' '
 vim.g.python3_host_prog = '/home/linuxbrew/.linuxbrew/bin/python3'
+vim.g.tagbar_ctags_bin = '/home/linuxbrew/.linuxbrew/bin/ctags'
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.vimspector_enable_mappings = 'HUMAN'

@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ctags = {
+    loaded = true,
+    path = "/home/jose/.local/share/nvim/site/pack/packer/start/ctags",
+    url = "https://github.com/universal-ctags/ctags"
+  },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
@@ -184,6 +189,16 @@ _G.packer_plugins = {
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "/home/jose/.local/share/nvim/site/pack/packer/start/rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
+  },
+  tagbar = {
+    loaded = true,
+    path = "/home/jose/.local/share/nvim/site/pack/packer/start/tagbar",
+    url = "https://github.com/preservim/tagbar"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -198,6 +213,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jose/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/jose/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
   },
   vimspector = {
     loaded = true,

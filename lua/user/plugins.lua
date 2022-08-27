@@ -24,6 +24,10 @@ use 'lukas-reineke/indent-blankline.nvim'
 use 'saadparwaiz1/cmp_luasnip'
 use 'L3MON4D3/LuaSnip'
 use 'glepnir/dashboard-nvim'
+use {'fatih/vim-go', ['do'] = 'GoUpdateBinaries' }
+use 'rust-lang/rust.vim'
+use 'preservim/tagbar'
+use 'universal-ctags/ctags'
 -- themes
 use 'gruvbox-community/gruvbox'
 use 'navarasu/onedark.nvim'
