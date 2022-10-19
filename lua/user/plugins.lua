@@ -28,6 +28,7 @@ use {'fatih/vim-go', ['do'] = 'GoUpdateBinaries' }
 use 'rust-lang/rust.vim'
 use 'preservim/tagbar'
 use 'universal-ctags/ctags'
+use {"iamcco/markdown-preview.nvim", run = function() vim.fn["mkdp#util#install"]() end, }
 -- themes
 use 'gruvbox-community/gruvbox'
 use 'navarasu/onedark.nvim'
